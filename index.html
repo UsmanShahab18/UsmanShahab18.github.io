@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mian Usman — AI/ML & Cybersecurity Engineer</title>
+  <meta name="description" content="Mian Usman — AI/ML Engineer & Cybersecurity Developer. Final-year Software Engineering student building intrusion detection systems, ML pipelines, and big-data threat intelligence platforms." />
+  <meta name="author" content="Mian Usman" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mian Usman — AI/ML & Cybersecurity Engineer" />
+  <meta property="og:description" content="Building intrusion detection systems, ML pipelines, and big-data threat intelligence platforms." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 3D animated background -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="bg-gradient" aria-hidden="true"></div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-mark">MU</span>
+      <span class="nav__logo-text">Mian Usman</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="Mian_Usman_Resume.pdf" class="btn btn--ghost nav__resume" download>Resume</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="Mian_Usman_Resume.pdf" class="btn btn--primary" download>Download Resume</a>
+  </div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+          <h1 class="hero__title">
+            Mian <span class="grad-text">Usman</span>
+          </h1>
+          <p class="hero__role" id="typed"></p>
+          <p class="hero__desc">
+            Software engineer building <strong>real-time intrusion detection systems</strong>,
+            ML pipelines, and big-data threat intelligence platforms — where
+            <span class="hl-cyan">artificial intelligence</span> meets <span class="hl-violet">cybersecurity</span>.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+          <div class="hero__socials">
+            <a href="https://github.com/UsmanShahab18" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mian-usman-407624281/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+            </a>
+            <a href="mailto:mianusmanshahab18@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="avatar-ring">
+            <div class="avatar">
+              <img src="assets/profile.jpg" alt="Mian Usman" onerror="this.style.display='none';this.parentElement.classList.add('avatar--empty')" />
+              <span class="avatar__fallback">MU</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about reveal">
+        <div class="about__bio">
+          <p>
+            I've just completed my final semester of <strong>BS Software Engineering</strong> at Lahore Garrison University (Class of 2026),
+            focused on the intersection of <span class="hl-cyan">AI/ML</span> and
+            <span class="hl-violet">cybersecurity</span>. I design and ship full systems end to end —
+            from training models on multi-million-row datasets to building the Django backends and
+            React dashboards that put them in an analyst's hands.
+          </p>
+          <p>
+            My final-year project, <strong>PIDS</strong>, is a real-time intrusion detection system that
+            fuses a multi-stage ML pipeline with a local LLM behaviour engine. Alongside it I've built
+            big-data threat-intelligence platforms, NLP classifiers, computer-vision detectors, and even
+            cybersecurity-themed Unity games. I drive the architecture, debugging, and engineering
+            decisions across the stack.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <h2 class="section__title">Skills &amp; Tools</h2>
+      </div>
+      <div class="skills">
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot dot-cyan"></span> Languages</h3>
+          <div class="tags">
+            <span>Python</span><span>JavaScript (ES6+)</span><span>SQL</span><span>C#</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot dot-violet"></span> AI / Machine Learning</h3>
+          <div class="tags">
+            <span>XGBoost</span><span>LightGBM</span><span>Scikit-learn</span><span>YOLOv8</span>
+            <span>ONNX</span><span>CNN</span><span>NLP / TF-IDF</span><span>K-Means</span>
+            <span>DBSCAN</span><span>SMOTE</span><span>Pandas</span><span>NumPy</span>
+            <span>LLM / Ollama</span><span>GNN</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot dot-cyan"></span> Web &amp; APIs</h3>
+          <div class="tags">
+            <span>Django REST</span><span>React 18</span><span>Material-UI</span><span>Flask</span>
+            <span>WebSockets</span><span>JWT / RBAC</span><span>Three.js</span><span>HTML5 / CSS3</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot dot-emerald"></span> Big Data</h3>
+          <div class="tags">
+            <span>Hadoop</span><span>HDFS</span><span>MapReduce</span><span>YARN</span>
+            <span>Spark MLlib</span><span>Hive</span><span>HBase</span><span>Pig</span><span>Flume</span><span>Sqoop</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot dot-violet"></span> Security</h3>
+          <div class="tags">
+            <span>Network Intrusion Detection</span><span>Scapy</span><span>Packet Analysis</span>
+            <span>Security Auditing</span><span>HMAC-SHA256</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3><span class="skill-card__dot dot-emerald"></span> Databases &amp; Tools</h3>
+          <div class="tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>Git / GitHub</span><span>Linux</span>
+            <span>VS Code</span><span>Jupyter</span><span>Unity</span><span>Colab</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <p class="section__lead reveal">Systems I've designed and shipped — driving architecture, debugging, and engineering decisions end to end.</p>
+
+      <!-- Featured: PIDS -->
+      <article class="project project--featured reveal">
+        <div class="project__body">
+          <div class="project__badge mono">Final Year Project</div>
+          <div class="project__top">
+            <h3 class="project__title">PIDS — Proactive Intrusion Detection System</h3>
+            <span class="project__date mono">Oct 2025 – Present</span>
+          </div>
+          <p class="project__desc">
+            A full-stack intrusion detection system fusing a four-stage ML pipeline with a local LLM
+            behaviour engine to catch network attacks in real time. Traffic flows through a binary
+            classifier, a 14-class attack identifier, a connection-rate detector for volumetric attacks,
+            and an Ollama-hosted LLM that reasons over C2 beaconing, scanning, SQL injection, and
+            exfiltration patterns.
+          </p>
+          <ul class="project__highlights">
+            <li>Trained on the full <strong>CICIDS2018</strong> dataset — 15.7M rows / 6 GB — with GPU-accelerated XGBoost at <strong>98.24%</strong> accuracy</li>
+            <li>31 statistical features computed live from raw packets via Scapy; user-selectable XGBoost / LightGBM / DNN / GNN engines</li>
+            <li>Extended with E-GraphSAGE + GATv2 GNN engine, lifting Infiltration F1 by <strong>2.34×</strong> over the DNN baseline</li>
+            <li>React 18 + Material-UI analyst dashboard with live threats, LLM re-analysis, and automated PDF reports</li>
+            <li>JWT-based RBAC (5 roles, HMAC-SHA256), full password policy, JSON audit logging &amp; a 40-issue security audit</li>
+            <li>Validated against <strong>10 live attacks</strong> using a custom attack generator and listener, confirming detection across major categories</li>
+          </ul>
+          <div class="tags tags--tech">
+            <span>Python</span><span>XGBoost</span><span>LightGBM</span><span>Django REST</span>
+            <span>React 18</span><span>PostgreSQL</span><span>Ollama</span><span>Scapy</span><span>GNN</span>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/UsmanShahab18/PIDS-Intrusion-Detection-System" target="_blank" rel="noopener" class="project__link">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Grid of other projects -->
+      <div class="project-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__head">
+            <h3>CyberHive</h3>
+            <span class="mono">Apr 2026 – Present</span>
+          </div>
+          <p class="project-card__sub">Cyber Threat Intelligence Platform</p>
+          <p>A big-data platform ingesting and correlating threat intelligence at scale — a two-node Hadoop cluster processing ~15 GB across CSE-CIC-IDS2018, NVD/CVE, Abuse.ch, MaxMind GeoLite2 and DNS logs, with an interactive 3D React + Three.js dashboard.</p>
+          <div class="tags tags--tech">
+            <span>Hadoop</span><span>Spark MLlib</span><span>Hive</span><span>HBase</span><span>Pig</span><span>Flume</span><span>Three.js</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__head">
+            <h3>Fake News Detection</h3>
+            <span class="mono">Apr – Jun 2025</span>
+          </div>
+          <p class="project-card__sub">DevelopersHub · 🏆 Best Award</p>
+          <p>An end-to-end NLP pipeline classifying news as real or fake at <strong>93%</strong> accuracy — text cleaning, TF-IDF, SMOTE for class imbalance — deployed via Flask web and Tkinter desktop apps. Cut inference time 30% by fixing Render deployment.</p>
+          <div class="tags tags--tech">
+            <span>Python</span><span>NLP</span><span>Logistic Regression</span><span>Flask</span><span>SMOTE</span>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/UsmanShahab18/Fake_Real_News_Detection" target="_blank" rel="noopener" class="project__link">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__head">
+            <h3>YOLOv8n Mask Detector</h3>
+            <span class="mono">Aug – Sep 2025</span>
+          </div>
+          <p class="project-card__sub">Packages Group</p>
+          <p>A real-time face-mask detector trained on YOLOv8n and exported to ONNX for fast inference, with a responsive React front-end wiring the model into a live detection system — alongside an e-commerce digitisation build.</p>
+          <div class="tags tags--tech">
+            <span>Python</span><span>YOLOv8</span><span>ONNX</span><span>React</span>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/UsmanShahab18/Mask-Detection" target="_blank" rel="noopener" class="project__link">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__head">
+            <h3>After Hours &amp; Blackout Protocol</h3>
+            <span class="mono">Course Project</span>
+          </div>
+          <p class="project-card__sub">Unity Games</p>
+          <p>Two complete cybersecurity-themed games: <em>After Hours</em>, a 3D first-person escape room with seven puzzles across six rooms, and <em>Blackout Protocol</em>, a 2D level-based game on a runtime scene-builder pattern.</p>
+          <div class="tags tags--tech">
+            <span>Unity 2022.3 LTS</span><span>URP</span><span>C#</span>
+          </div>
+          <div class="project__links">
+            <a href="https://github.com/UsmanShahab18/After-Hours-Unity-Game" target="_blank" rel="noopener" class="project__link">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__head">
+            <h3>Satellite Image Classification</h3>
+            <span class="mono">Jun 2025</span>
+          </div>
+          <p class="project-card__sub">Computer Vision</p>
+          <p>A CNN-based multi-class satellite image classifier built with transfer learning, data augmentation, and hyperparameter optimisation.</p>
+          <div class="tags tags--tech">
+            <span>Python</span><span>CNN</span><span>Transfer Learning</span>
+          </div>
+        </article>
+
+        <article class="project-card project-card--cta reveal">
+          <h3>More on GitHub</h3>
+          <p>Customer segmentation, sentiment analysis, and other ML experiments live on my profile.</p>
+          <a href="https://github.com/UsmanShahab18" target="_blank" rel="noopener" class="btn btn--ghost">@UsmanShahab18</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__top">
+              <h3>Data Science &amp; Web Development Intern</h3>
+              <span class="mono">Aug – Sep 2025</span>
+            </div>
+            <p class="timeline__org">Packages Group · Lahore</p>
+            <ul>
+              <li>Built the front-end for a real-time AI detection system, integrating ML models with responsive web design.</li>
+              <li>Developed a scalable e-commerce platform — authentication, catalogue management, and payment processing.</li>
+              <li>Implemented data-visualisation dashboards tracking system performance and user engagement.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__top">
+              <h3>AI / ML Engineering Intern</h3>
+              <span class="mono">Apr – Jun 2025</span>
+            </div>
+            <p class="timeline__org">DevelopersHub Corporation · Lahore</p>
+            <ul>
+              <li>Designed and deployed an end-to-end fake-news detection pipeline at 93% accuracy.</li>
+              <li>Built a K-Means customer segmentation system over 10,000+ data points for marketing insights.</li>
+              <li>Created an NLP sentiment-analysis model (TF-IDF + Logistic Regression) for review classification.</li>
+              <li>Reduced inference time 30% by resolving Render cloud deployment challenges.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="awards reveal">
+        <div class="award">
+          <span class="award__icon">🏆</span>
+          <div>
+            <strong>Best Award in AI &amp; Machine Learning Internship</strong>
+            <span class="mono">DevelopersHub Corporation · Jun 2025</span>
+          </div>
+        </div>
+        <div class="award">
+          <span class="award__icon">📜</span>
+          <div>
+            <strong>Machine Learning, AI &amp; Data Science Certification</strong>
+            <span class="mono">Ehunar · Feb 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section--contact" id="contact">
+      <div class="contact reveal">
+        <h2 class="contact__title">Let's build something <span class="grad-text">secure</span>.</h2>
+        <p class="contact__desc">
+          Open to AI/ML, cybersecurity, and full-stack roles. Have a project or an opportunity in mind? My inbox is open.
+        </p>
+        <a href="mailto:mianusmanshahab18@gmail.com" class="btn btn--primary btn--lg">mianusmanshahab18@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://github.com/UsmanShahab18" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/in/mian-usman-407624281/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Mian Usman · Designed &amp; built in Lahore.</p>
+    <a href="#home" class="footer__top">Back to top ↑</a>
+  </footer>
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scene.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

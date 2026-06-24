@@ -1,0 +1,11 @@
+# Local tooling / preview config (not needed in the repo)
+.claude/
+
+# OS / system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
