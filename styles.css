@@ -509,8 +509,8 @@ strong { color: #fff; font-weight: 600; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 900px) {
-  .hero__inner { grid-template-columns: 1fr; gap: 3.5rem; text-align: left; }
-  .hero__visual { order: -1; justify-self: start; }
+  .hero__inner { grid-template-columns: 1fr; gap: 2.5rem; text-align: left; }
+  .hero__visual { order: -1; justify-self: center; }
   .nav__links, .nav__resume { display: none; }
   .nav__toggle { display: flex; }
 }
