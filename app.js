@@ -12,7 +12,7 @@
   const typed = document.getElementById('typed');
   const roles = [
     'AI / ML Engineer',
-    'Cybersecurity Developer',
+    'Cybersecurity ',
     'Full-Stack Builder',
     'Software Engineering Graduate',
   ];
